@@ -14,6 +14,16 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+/**
+ * Used on Arduino Leonardo
+ * Sensor: MPU-6050
+ * Pinout: SCL Arduino pin 3
+ *         SDA Arduino pin 2
+ *         Sensor runs at 3.3V but there is a regulator on the board, so it is powered by the Arduino 5V
+ * 
+ * Default keyboard bindings for Nidhogg (f/m for left/right player)
+ */
+
 #include <Wire.h>
 #include <Keyboard.h>
 
@@ -93,7 +103,6 @@ void loop() {
 //    Serial.print(" ");
 //    Serial.println(gyrZ);
 
-    // TODO find an appropriate threshold
     if(gyrX > 15000)
     {
         // Press key and turn on the LED
