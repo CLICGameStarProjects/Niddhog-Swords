@@ -55,6 +55,7 @@ You'll need the Arduino IDE with the Keyboard library (available from the librar
 The `nunchuck_functions.h` file is a slightly modified version of `https://github.com/todbot/wiichuck_adapter/blob/master/firmware/WiichuckDemo/nunchuck_funcs.h`
 ### Mapping
 Z: jump
+
 Joystick left/right: move left/right
 
 ### Configuration
