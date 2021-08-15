@@ -39,6 +39,14 @@ void setup() {
     Wire.write(0x6B);
     Wire.write(0x00);
     Wire.endTransmission(true);
+
+    delay(10);
+
+    // Decrease sensitivity
+    Wire.beginTransmission(I2C_ADDR);
+    Wire.write(0x1B);
+    Wire.write(0x10);
+    Wire.endTransmission(true);
 }
 
 void loop() {
@@ -86,7 +94,7 @@ void loop() {
 //    Serial.println(gyrZ);
 
     // TODO find an appropriate threshold
-    if(gyrX > 20000)
+    if(gyrX > 15000)
     {
         // Press key and turn on the LED
         Keyboard.press(KEY);
