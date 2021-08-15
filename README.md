@@ -34,6 +34,7 @@ This program is used to interface a Nintendo Wii Nunchuck and generate keypresse
 The hardware is an Arduino Micro with a Nunchuck connected.
 
 Pinout:
+```
 ┌─┐   ┌─┐
 │ └───┘ │
 │ · · · │ SCL  NC  GND
@@ -45,6 +46,7 @@ SDA: Arduino pin 2
 VCC: 3.3V
 GND: Ground
 NC:  No connection
+```
 
 ### Installation
 You'll need the Arduino IDE with the Keyboard library (available from the library store in the IDE, by the Arduino team)
